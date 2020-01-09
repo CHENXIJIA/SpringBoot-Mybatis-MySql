@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.boot.mybatis.qingfeng.dao.UserMapper">
+
+    <select id="query" resultType="com.spring.boot.mybatis.qingfeng.pojo.User">
+        SELECT
+          id        AS id,
+          user_name AS userName,
+          pass_word AS passWord
+        FROM user
+    </select>
+
+</mapper>
